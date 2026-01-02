@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sistem Absensi Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Sistem Absensi Mahasiswa</h2>
+
+      <form id="absenForm">
+        <input type="text" id="nama" placeholder="Nama Mahasiswa" required />
+        <input type="text" id="nim" placeholder="NIM" required />
+
+        <select id="matkul" required>
+          <option value="">-- Pilih Mata Kuliah --</option>
+          <option>Pemrograman Web</option>
+          <option>Basis Data</option>
+          <option>Kecerdasan Buatan</option>
+        </select>
+
+        <select id="status" required>
+          <option value="">-- Status Kehadiran --</option>
+          <option>Hadir</option>
+          <option>Izin</option>
+          <option>Alpha</option>
+        </select>
+
+        <button type="submit">Simpan Absensi</button>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Mata Kuliah</th>
+            <th>Status</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="dataAbsensi"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

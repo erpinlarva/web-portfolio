@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="asset/shape.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Portfolio | ERPIN</title>
+  </head>
+  <body>
+    <main>
+      <header class="main-header">
+        <div class="container navbar">
+          <div class="header-brand">
+            <img src="asset/shape.png" alt="Logo" class="header-logo" />
+            <h1 class="header-title">Erpin | Portfolio</h1>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+
+          <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#about-me-section">Me</a>
+            <a href="#bagian-tugas">Tugas</a>
+            <a href="#bagian-submit">Submit</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class="hero-section">
+        <div id="particles-js" class="container hero-content"></div>
+
+        <div class="hero-banner">
+          <h1 class="banner-title text-align mb-10">
+            Portfolio Akademik Mahasiswa
+          </h1>
+          <p class="banner-tagline text-align mb-10">
+            Dokumentasi tugas, proyek perkuliahan, dan pengembangan keterampilan
+            di bidang teknik | informatika
+          </p>
+        </div>
+        <svg
+          class="wave-divider"
+          viewBox="0 0 1440 250"
+          preserveAspectRatio="none"
+        >
+          <path
+            fill="#ffffff"
+            d="M0,150 L200,120 C400,90 600,170 800,140 C1000,110 1200,180 1440,150 L1440,250 L0,250 Z"
+          ></path>
+        </svg>
+      </section>
+
+      <script src="script.js"></script>
+
+      <section id="about-me-section" class="content-section about-me">
+        <div class="container">
+          <h2 class="section-title">Me</h2>
+        </div>
+
+        <div class="container about-container">
+          <div class="about-photo-wrapper">
+            <img src="asset/erpin.jpg" alt="Profile" class="profile-photo" />
+          </div>
+
+          <div class="about-content-wrapper">
+            <h2 class="main-title-about">About Me</h2>
+            <p class="intro-text">
+              Halo! Saya ERPIN, Saya seorang Mahasiswa Universitas Pamulang
+              Semester 5 | Teknik informatika
+            </p>
+
+            <div class="info-cards-grid">
+              <div class="info-card">
+                <i class="fas fa-calendar-alt"></i>
+                <span class="card-label">Status</span>
+                <span class="card-value">Mahasiswa</span>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-heart"></i>
+                <span class="card-label">Hobi</span>
+                <span class="card-value">SEPAK BOLA</span>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="card-label">Domisili</span>
+                <span class="card-value">Indonesia | Medan</span>
+              </div>
+              <div class="info-card">
+                <i class="fas fa-code"></i>
+                <span class="card-label">Keahlian</span>
+                <span class="card-value">Frontend | UI & UX </span>
+              </div>
+            </div>
+
+            <div class="social-icons-about">
+              <a href="#" class="sosmed-icon"><i class="fab fa-twitter"></i></a>
+              <a
+                href="https://www.instagram.com/viynnn_12?igsh=MXd3NWExdnBta3NjdA=="
+                class="sosmed-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@vynnnn_2003?is_from_webapp=1&sender_device=pc"
+                class="sosmed-icon"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SEMUA CARD TUGAS TETAP (TIDAK DIUBAH) -->
+      <!-- BAGIAN TUGAS -->
+      <div id="bagian-tugas" class="container-tugas">
+        <h2 class="section-title">Tugas</h2>
+
+        <div class="card-grid">
+          <!-- Pertemuan 2 -->
+          <a
+            href="tugas/pertemuan2/index.html"
+            class="task-card"
+            data-pertemuan="2"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 2"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 2</span>
+                <span class="card-subtitle">HTML Basic</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 3 -->
+          <a
+            href="tugas/pertemuan3/index.html"
+            class="task-card"
+            data-pertemuan="3"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 3"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 3</span>
+                <span class="card-subtitle">Size & Ukuran</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 4 -->
+          <a
+            href="tugas/pertemuan4/index.html"
+            class="task-card"
+            data-pertemuan="4"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 4"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 4</span>
+                <span class="card-subtitle">Video & Audio</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 5 -->
+          <a
+            href="tugas/pertemuan5/index.html"
+            class="task-card"
+            data-pertemuan="5"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 5"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 5</span>
+                <span class="card-subtitle">Navbar</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 6 -->
+          <a
+            href="tugas/pertemuan6/index.html"
+            class="task-card"
+            data-pertemuan="6"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 6"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 6</span>
+                <span class="card-subtitle">Text & Color</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 7 -->
+          <a
+            href="tugas/pertemuan7/index.html"
+            class="task-card"
+            data-pertemuan="7"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 7"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 7</span>
+                <span class="card-subtitle">Layout & Kolom</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 8 -->
+          <a
+            href="tugas/pertemuan8/index.html"
+            class="task-card"
+            data-pertemuan="8"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 8"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 8</span>
+                <span class="card-subtitle">Form HTML</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 9 -->
+          <a
+            href="tugas/pertemuan9/index.html"
+            class="task-card"
+            data-pertemuan="9"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 9"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 9</span>
+                <span class="card-subtitle">Table HTML</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 10 -->
+          <a
+            href="tugas/pertemuan10/index.html"
+            class="task-card"
+            data-pertemuan="10"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 10"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 10</span>
+                <span class="card-subtitle">Text & Paragraf</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 11 -->
+          <a
+            href="tugas/pertemuan11/index.html"
+            class="task-card"
+            data-pertemuan="11"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 11"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 11</span>
+                <span class="card-subtitle">Web dengan HTML</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 12 -->
+          <a
+            href="tugas/pertemuan12/index.html"
+            class="task-card"
+            data-pertemuan="12"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 12"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 12</span>
+                <span class="card-subtitle">Company Profile</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 13 -->
+          <a href="index.html" class="task-card" data-pertemuan="13">
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 13"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 13</span>
+                <span class="card-subtitle">Company Profile Lanjutan</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 14 -->
+          <a
+            href="tugas/pertemuan14/index.html"
+            class="task-card"
+            data-pertemuan="14"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 14"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 14</span>
+                <span class="card-subtitle">JavaScript Dasar</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 15 -->
+          <a
+            href="tugas/pertemuan15/index.html"
+            class="task-card"
+            data-pertemuan="15"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 15"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 15</span>
+                <span class="card-subtitle">Dialog Box</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 16 -->
+          <a
+            href="tugas/pertemuan16/index.html"
+            class="task-card"
+            data-pertemuan="16"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 16"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 16</span>
+                <span class="card-subtitle">Tipe Data & Operator</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 17 -->
+          <a
+            href="tugas/pertemuan17/index.html"
+            class="task-card"
+            data-pertemuan="17"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 17"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 17</span>
+                <span class="card-subtitle">Control Flow & Looping</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 18 -->
+          <a
+            href="tugas/pertemuan18/index.html"
+            class="task-card"
+            data-pertemuan="18"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="Pertemuan 18"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">Pertemuan 18</span>
+                <span class="card-subtitle">FUNCTION & ARRAY</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Pertemuan 19 -->
+          <a
+            href="tugas/project web/index.html"
+            class="task-card"
+            data-pertemuan="19"
+          >
+            <div class="card-content">
+              <img
+                src="asset/vin18-min.jpg"
+                style="max-width: 120px; height: auto"
+                alt="project web"
+                class="card-image"
+              />
+              <div class="card-info">
+                <span class="card-title">project Web</span>
+                <span class="card-subtitle">Sistem Absensi Mahasiswa</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <section id="bagian-submit" class="content-section">
+        <div id="responseMessage" class="contact-wrapper">
+          <h2 class="section-title" style="color: #fff; text-align: center">
+            Form Kontak
+          </h2>
+
+          <form id="contactForm" method="POST" class="contact-form-new">
+            <div class="form-group">
+              <label>Nama Lengkap</label>
+              <input type="text" placeholder="ERPIN" required />
+            </div>
+
+            <div class="form-group">
+              <label>Media Sosial</label>
+              <input type="text" placeholder="@erpin" />
+            </div>
+
+            <div class="form-group">
+              <label>Pesan</label>
+              <textarea rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn-new">Kirim</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="container footer-content">
+          <img src="asset/apple.png" alt="" class="footer-logo" />
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.tiktok.com/@vynnnn_2003?is_from_webapp=1&sender_device=pc"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+
+          <p class="footer-title">ERPIN - 231011400914</p>
+          <p class="footer-copyright">&copy; 2025 Portfolio ERPIN</p>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+      <script src="script1.js"></script>
+    </main>
+  </body>
+</html>

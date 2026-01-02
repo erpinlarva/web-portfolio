@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memasukkan Data Dengan Objek Radio</title>
+    <style>
+      /* Gaya dasar untuk meniru tampilan yang lebih formal */
+      body {
+        font-family: serif;
+        margin: 20px;
+        color: #333;
+      }
+      h1 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        font-size: 2em;
+      }
+      form {
+        margin-top: 20px;
+      }
+      div {
+        margin-bottom: 10px;
+      }
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      button {
+        padding: 8px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: 1px solid #333;
+        background-color: #eee;
+      }
+      /* Gaya khusus untuk tombol CONFRM dan RESET agar mirip gambar */
+      .button-container {
+        margin-top: 20px;
+      }
+      #confirm-btn,
+      #reset-btn {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Memasukkan Data Dengan Objek Radio</h1>
+
+    <hr />
+
+    <form id="gender-form">
+      <div>
+        <input type="radio" id="wanita" name="gender" value="Wanita" checked />
+        <label for="wanita">Wanita</label>
+      </div>
+      <div>
+        <input type="radio" id="pria" name="gender" value="Pria" />
+        <label for="pria">Pria</label>
+      </div>
+
+      <div class="button-container">
+        <button type="button" id="confirm-btn" onclick="tampilkanKonfirmasi()">
+          Confirm
+        </button>
+        <button type="reset" id="reset-btn">Reset</button>
+      </div>
+    </form>
+
+    <script>
+      function tampilkanKonfirmasi() {
+        // Mendapatkan semua elemen radio button dengan nama 'gender'
+        const radioButtons = document.getElementsByName("gender");
+        let pilihan = "";
+
+        // Melakukan loop untuk menemukan radio button yang dipilih
+        for (let i = 0; i < radioButtons.length; i++) {
+          if (radioButtons[i].checked) {
+            pilihan = radioButtons[i].value; // Mengambil nilai (value) dari yang dipilih
+            break; // Keluar dari loop setelah menemukan yang dipilih
+          }
+        }
+
+        // Membuat pesan pop-up (alert) sesuai dengan pilihan
+        if (pilihan) {
+          let pesan;
+          if (pilihan === "Wanita") {
+            pesan = "Anda adalah seorang Wanita";
+          } else if (pilihan === "Pria") {
+            pesan = "Anda adalah seorang Pria";
+          }
+
+          // Menampilkan pop-up alert() seperti di gambar
+          alert(pesan);
+        } else {
+          // Kasus jika tidak ada yang dipilih (seharusnya tidak terjadi karena 'Wanita' sudah 'checked')
+          alert("Mohon pilih salah satu gender.");
+        }
+      }
+    </script>
+  </body>
+</html>
